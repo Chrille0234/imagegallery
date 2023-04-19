@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An image gallery sort of like on amazon">
+    <title>gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preload" 
+    as="image" 
+    href="https://placehold.co/600x400/orange/white" 
+    src="https://placehold.co/600x400/orange/white">
+
+</head>
+<body>
+    <main>
+        <article style="display: flex; flex-direction: column; align-items: center;">
+            <div id="img-container">
+                <img id="main_image" >
+            </div>
+            <div class="thumbnails">
+
+            </div>
+        </article>
+    </main>
+
+    <script src="./https://unpkg.com/js-image-zoom@0.4.1/js-image-zoom.js" type="application/javascript" ></script>
+    <script src="./script.js"></script>
+    <script>
+        var options = {
+    width: 400,
+    zoomWidth: 150,
+    zoomHeight: 200,
+    offset: {vertical: 0, horizontal: 10}
+};
+    new ImageZoom(document.getElementById("img-container"), options);
+    </script>
+</body>
+</html>
