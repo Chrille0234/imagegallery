@@ -20,6 +20,8 @@
 
     margin: auto 3px;
 }
+
+
 /* mobilbrug */
 @media screen and (max-width: 600px) {
     .thumbnails img{
